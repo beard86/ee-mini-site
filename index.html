@@ -21,51 +21,103 @@
 
 	<div id="header-container">
 		<header class="wrapper clearfix">
-			<h1 id="title">h1#title</h1>
-			<nav>
-				<ul>
-					<li><a href="#">nav ul li a</a></li>
-					<li><a href="#">nav ul li a</a></li>
-					<li><a href="#">nav ul li a</a></li>
-				</ul>
-			</nav>
+			<h1 id="title">
+				<span style="font-size:20px;">WOMEN's FA CUP FINAL</span><br />
+	            <span style="font-size:16px;font-weight:bold;color:#ffe600;">Saturday 1st August 2015</span>
+			</h1>
+            <img class="fl-right mg-top" src="images/logo.png"/>
+
 		</header>
 	</div>
 	<div id="main-container">
-		<div id="main" class="wrapper clearfix">
-			
+		<header>
+	            <img class="desktop" width="100%" src="images/header-bg-desktop.jpg"/>
+	            <img class="mobile" width="100%" src="images/header-bg-mobile.jpg"/>
+		</header>
+		<div id="main" class="wrapper clearfix whitebg">
 			<article>
-				<header>
-					<h1>article header h1</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-				</header>
 				<section>
-					<h2>article section h2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+					<p>RSVP</p>
+					<a href="#" class="btn decline grey-bg">DECLINE</a>
+					<a href="##" class="btn accept green-bg">ACCEPT</a>
+					<p>Please contact us at <a href="mailto:eewembley@cakegroup.com">eewembley@cakegroup.com</a> with any queries</p>
 				</section>
-				<section>
-					<h2>article section h2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-				</section>
-				<footer>
-					<h3>article footer h3</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-				</footer>
 			</article>
-			
-			<aside>
-				<h3>aside</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-			</aside>
-			
-		</div> <!-- #main -->
+		</div>
+		<div id="main-form" class="wrapper clearfix sandbg hidden">
+			<article class="form">
+				<section>
+					<p>We are delighted you are joining us at Wembley Stadium, connected by EE.<br/>
+					Please complete all fields below and click submit to confirm your RSVP.</p>
+					<form>
+						<div class="two-col clearfix">
+							<div>
+								<label for="first-name">FIRST NAME</label>
+								<input id="first-name" type="text" placeholder="FIRST NAME"/>
+							</div>
+							<div>
+								<label for="last-name">LAST NAME</label>
+								<input id="last-name" type="text"  placeholder="LAST NAME"/>
+							</div>
+							<div>
+								<label for="company">COMPANY</label>
+								<input id="company" type="text" placeholder="COMPANY" />
+							</div>
+						</div>
+						<div class="two-col clearfix">
+							<div>
+								<label for="mobile">MOBILE NUMBER</label>
+								<input id="mobile" type="tel" placeholder="Required"/>
+							</div>
+							<div class="last">
+								<label for="diet">DIETARY REQUIREMENTS</label>
+								<input id="diet" type="text" placeholder="If none, leave blank"/>
+							</div>
+							<div>
+								<button id="submit" type="button" value="SUBMIT">SUBMIT</button>
+							</div>
+						</div>	
+						</form>
+				</section>
+			</article>
+		</div> <!-- #main-form -->
+		<div id="main-thanks" class="wrapper clearfix whitebg hidden">
+			<article>
+				<section>
+					<p class="bold">Thank you for submitting your details.</p>
+					For any queries please contact <a href="mailto:eewembley@cakegroup.com">eewembley@cakegroup.com</a><br/>We look forward to seeing you at Wembley Stadium, connected by EE.</p>
+				</section>
+			</article>	
+		</div> <!-- #main-thanks -->
+		<div id="main-sorry" class="wrapper clearfix whitebg hidden">
+			<article>
+				<section>
+					<p>We are sorry you are unable to join us at Wembley Stadium, connected by EE.<br/>
+					We hope you can join us at an event in the near future.</p>
+				</section>
+			</article>	
+		</div> <!-- #main-sorry -->
 	</div> <!-- #main-container -->
 
 	<div id="footer-container">
 		<footer class="wrapper">
-			<h3>footer</h3>
+			<h3>&copy; 2015 EE LIMITED</h3>
 		</footer>
 	</div>
+	<div id="popup-holder" class="popup-overlay hidden">
+		<div class="popup">
+			<article>
+				<section>
+					<p>Are you sure?</p>
+					<a href="##" class="btn no grey-bg">NO</a>
+					<a href="##" class="btn yes green-bg">YES</a>
+				</section>
+			</article>
+		</div>
+	</div>
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>
