@@ -1,16 +1,14 @@
 
-/* ===================================================
-    Initializr styles
-    http://verekia.com/initializr/responsive-template
-    Author: Jonathan Verrecchia
-   =================================================== */
+// P.HELPBLOCK VALIDATION
 
 body {
   font: 16px/24px Helvetica, Helvetica Neue, Arial, sans-serif;
   background-color: #f6f4f0;
 }
 
-footer.wrapper, div > article, header.wrapper {
+footer.wrapper, 
+div > article, 
+header.wrapper {
   width: 90%;
   margin: 0 auto;
 }
@@ -29,10 +27,7 @@ footer.wrapper, div > article, header.wrapper {
     ALL: EE Theme
    =================== 
 
-#header-container{ border-bottom: 20px solid #007b85; }
-#footer-container{ border-top:    20px solid #007b85; }
-#main aside      { border-top:    20px solid #007b85; }*/
-
+*/
 #header-container, #footer-container, #main aside {
   background: #007b85;
 }
@@ -65,12 +60,15 @@ button {
   background-color: #009c9c;
   border: 0;
 }
+input {
+      border: 1px solid #ccc;
+}
 
 a {
   &.btn {
     width: 44%;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px 5px;
     margin-right: 5px;
     font-weight: normal;
     color: #FFF;
@@ -250,7 +248,7 @@ div.sandbg {
 }
 
 .show {
-  max-height: 620px;
+  max-height: 1080px;
 }
 
 .hidden.focusable {

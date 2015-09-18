@@ -12,10 +12,9 @@ module.exports = function(grunt) {
       },
       basic: {
         src: [
-               'js/3rdparty/jquery-1.11.2.min.js',
-               'js/3rdparty/owl.carousel.js'
+               'js/*/*.js'
         ],
-        dest: 'js/main-thirdparty.js'
+        dest: 'js/plugins.js'
       }
     },
 
@@ -28,7 +27,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'js/min/main-custom.min.js': ['build/mobile/common/js/<%= pkg.name %>-custom.js'],
-          'js/min/main-thirdparty.min.js': ['build/mobile/common/js/<%= pkg.name %>-thirdparty.js']
+          'js/min/plugins.min.js': ['build/mobile/common/js/<%= pkg.name %>-thirdparty.js']
         }
       }
     },
@@ -42,7 +41,7 @@ module.exports = function(grunt) {
 
 
     jshint: {
-      files: ['Gruntfile.js', 'js/*.js', 'test/mobile/common/**/*.js'],
+      files: ['Gruntfile.js', 'js/*.js'],
       options: {
         // options here to override JSHint defaults
         globals: {
@@ -77,7 +76,7 @@ module.exports = function(grunt) {
           // 'src/mobile/includes/*.php',
           // 'src/mobile/*.php'
         ],
-        tasks: ['compass' ],
+        tasks: ['compass'],
         options: {
           livereload: 35729,
         }

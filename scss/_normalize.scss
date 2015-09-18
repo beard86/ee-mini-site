@@ -1,6 +1,11 @@
 /* HTML5 ✰ Boilerplate
  * ==|== normalize ==========================================================
  */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
@@ -180,6 +185,11 @@ figure {
 
 form {
   margin: 0;
+  clear: left;
+  display: none;
+  &#form-1 {
+    display: block;
+  }
   > div {
     margin-bottom: 15px;
   }
@@ -215,8 +225,8 @@ button, input {
   line-height: normal;
   *overflow: visible;
   font-size: 12px;
-  padding: 5px;
-  width: 96%;
+  padding: 10px;
+  width: 100%;
 }
 
 table {

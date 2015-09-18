@@ -1,0 +1,310 @@
+/* ===================================================
+    Initializr styles
+    http://verekia.com/initializr/responsive-template
+    Author: Jonathan Verrecchia
+   =================================================== */
+/* line 8, ../scss/main.scss */
+body {
+  font: 16px/24px Helvetica, Helvetica Neue, Arial, sans-serif;
+  background-color: #f6f4f0;
+}
+
+/* line 13, ../scss/main.scss */
+footer.wrapper, div > article, header.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*animate main content */
+/* line 20, ../scss/main.scss */
+.wrapper {
+  -webkit-transition: max-height 0.5s ease;
+  -moz-transition: max-height 0.5s ease;
+  -o-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
+  overflow: hidden;
+}
+
+/* ===================
+    ALL: EE Theme
+   =================== 
+
+#header-container{ border-bottom: 20px solid #007b85; }
+#footer-container{ border-top:    20px solid #007b85; }
+#main aside      { border-top:    20px solid #007b85; }*/
+/* line 36, ../scss/main.scss */
+#header-container, #footer-container, #main aside {
+  background: #007b85;
+}
+
+/* line 40, ../scss/main.scss */
+#main-container {
+  max-width: 930px;
+  margin: 0 auto 0;
+}
+/* line 43, ../scss/main.scss */
+#main-container > div {
+  margin-bottom: 5em;
+}
+/* line 45, ../scss/main.scss */
+#main-container > div.hidden {
+  margin: -1px;
+}
+
+/* line 51, ../scss/main.scss */
+#footer-container {
+  background: #3c3d41;
+  z-index: 99;
+}
+
+/* line 56, ../scss/main.scss */
+button {
+  width: 44%;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: normal;
+  color: #FFF;
+  display: inline-block;
+  text-align: center;
+  background-color: #009c9c;
+  border: 0;
+}
+
+/* line 70, ../scss/main.scss */
+a.btn {
+  width: 44%;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: normal;
+  color: #FFF;
+  display: inline-block;
+  text-align: center;
+  background-color: #009c9c;
+  border: 0;
+}
+/* line 82, ../scss/main.scss */
+a.green-bg {
+  background-color: #009c9c;
+  float: right;
+}
+/* line 86, ../scss/main.scss */
+a.grey-bg {
+  background-color: #6d6e71;
+}
+
+/* line 91, ../scss/main.scss */
+button#submit {
+  width: 100%;
+  padding: 10px;
+}
+
+/* line 96, ../scss/main.scss */
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+/* line 112, ../scss/main.scss */
+.popped {
+  opacity: 1;
+}
+
+/* line 116, ../scss/main.scss */
+.popup {
+  position: absolute;
+  border-radius: 3px;
+  background: #fff;
+  width: 288px;
+  left: 50%;
+  margin-left: -144px;
+  top: 50%;
+  margin-top: -60px;
+  padding: 10px;
+  height: 120px;
+}
+
+/* line 129, ../scss/main.scss */
+#title {
+  color: white;
+  float: left;
+}
+
+/* spacers */
+/* line 136, ../scss/main.scss */
+.fl-right {
+  float: right;
+}
+
+/* line 140, ../scss/main.scss */
+.pd-right {
+  padding-right: 0.97em;
+}
+
+/* line 144, ../scss/main.scss */
+.mg-top {
+  margin-top: 0.97em;
+}
+
+/* line 148, ../scss/main.scss */
+.two-col > div {
+  margin-bottom: 15px;
+}
+/* line 150, ../scss/main.scss */
+.two-col > div.last {
+  margin-bottom: 38px;
+}
+
+/* line 155, ../scss/main.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 159, ../scss/main.scss */
+.desktop {
+  display: none;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+/* line 167, ../scss/main.scss */
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  background: #007b85;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 176, ../scss/main.scss */
+nav a:hover, nav a:visited {
+  color: white;
+}
+/* line 179, ../scss/main.scss */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+/* line 188, ../scss/main.scss */
+.whitebg {
+  background: #fff;
+}
+
+/* line 192, ../scss/main.scss */
+div.sandbg {
+  background: #fbfaf8;
+}
+
+/* line 197, ../scss/main.scss */
+#main article h1 {
+  font-size: 2em;
+}
+/* line 200, ../scss/main.scss */
+#main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+/* line 206, ../scss/main.scss */
+#footer-container footer {
+  color: white;
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+/* line 216, ../scss/main.scss */
+.ie7 #title {
+  padding-top: 20px;
+}
+
+/* ==|== non-semantic helper classes ======================================== */
+/* line 222, ../scss/main.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+/* line 231, ../scss/main.scss */
+.ir br {
+  display: none;
+}
+
+/* line 236, ../scss/main.scss */
+.visuallyhidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 241, ../scss/main.scss */
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  max-height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 252, ../scss/main.scss */
+.show {
+  max-height: 620px;
+}
+
+/* line 257, ../scss/main.scss */
+.hidden.focusable:active, .hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 267, ../scss/main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 271, ../scss/main.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 272, ../scss/main.scss */
+.clearfix:before {
+  content: "";
+  display: table;
+}
+/* line 276, ../scss/main.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
